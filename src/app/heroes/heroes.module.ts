@@ -6,7 +6,7 @@ import { ListComponent } from "./list/list.component";
 
 @NgModule({
   declarations: [HeroComponent, ListComponent],
-  exports: [HeroComponent], // quito la exportacioón del ListComponent por que choca aunque no lo hago, con la exportación del DBZ...
+  exports: [HeroComponent, ListComponent], // quito la exportacioón del ListComponent por que choca aunque no lo hago, con la exportación del DBZ...
   imports: [CommonModule]
 })
 export class HeroesModule {
