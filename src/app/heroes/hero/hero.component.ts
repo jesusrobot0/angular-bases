@@ -21,7 +21,7 @@ export class HeroComponent {
   }
 
   changeHero(): void {
-    this.name = "Spiterman"
+    this.name = "Spiderman"
   }
 
   changeAge(): void {
