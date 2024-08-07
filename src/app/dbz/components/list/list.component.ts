@@ -11,4 +11,6 @@ export class ListComponent {
   public characterList: Character[] = [
     {name: "Thunks", power: 10} // Si no mandan el input, esta es la data por defecto
   ]
+
+
 }
