@@ -15,7 +15,7 @@ export class AddCharacterComponent {
     if (this.character.name === "") return;
     if (this.character.power < 0) return;
 
-    this.onNewCharacter.emit(this.character);
+    this.onNewCharacter.emit({...this.character});
 
     this.character = {name: "", power: 0}
   }
