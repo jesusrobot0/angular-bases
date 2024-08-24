@@ -1,14 +1,12 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { HeroComponent } from "./hero/hero.component";
-import { ListComponent } from "./list/list.component";
+import { HeroComponent } from './hero/hero.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
-  declarations: [HeroComponent, ListComponent],
-  exports: [HeroComponent, ListComponent], // quito la exportacioón del ListComponent por que choca aunque no lo hago, con la exportación del DBZ...
-  imports: [CommonModule]
+  declarations: [HeroComponent, ListComponent, ListComponent],
+  exports: [HeroComponent, ListComponent],
+  imports: [CommonModule],
 })
-export class HeroesModule {
-
-}
+export class HeroesModule {}
