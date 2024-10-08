@@ -15,8 +15,7 @@ import { Character } from '../../interfaces/character.interface';
   styleUrl: './add-character.component.css',
 })
 export class AddCharacterComponent implements OnInit {
-  @Output()
-  public onNewCharacter: EventEmitter<Character> = new EventEmitter();
+  @Output() public onNewCharacter: EventEmitter<Character> = new EventEmitter();
   public character: Character = {id: "", name: "", power: 0}
   private subscription: Subscription = new Subscription();
 
