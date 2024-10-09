@@ -5,7 +5,6 @@ import { v4 as uuid } from "uuid";
 
 import { DBZService } from '../../services/dbz.service';
 
-
 /* ********** INTERFACES ********** */
 import { Character } from '../../interfaces/character.interface';
 
@@ -16,11 +15,11 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class AddCharacterComponent implements OnInit {
   @Output() public onNewCharacter: EventEmitter<Character> = new EventEmitter();
+
   public character: Character = {id: "", name: "", power: 0}
   private subscription: Subscription = new Subscription();
 
   constructor(private dbzService: DBZService) {}
-
 
   ngOnInit(): void {
     // Suscríbete a los cambios del personaje seleccionado
